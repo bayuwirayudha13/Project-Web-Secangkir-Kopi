@@ -9,6 +9,7 @@ body {
     background-color: #000000;
     color: #ffffff;
     line-height: 1.6;
+    padding-top: 60px;
 }
 
 .navbar {
@@ -16,6 +17,10 @@ body {
     color: #fff;
     margin: 0;
     padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
@@ -76,5 +81,35 @@ body {
 .about-us {
     padding: 50px;
     text-align: left;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-wrapper {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-image-wrapper {
+    flex: 1;
+}
+
+.about-image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Media queries untuk responsivitas */
+@media (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-wrapper {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
