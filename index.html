@@ -1,65 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website resmi Secangkir Kopi - Nikmati kopi terbaik dari biji pilihan">
+    <title>Secangkir Kopi - Nikmati Kopi Terbaik</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
 <body>
-    <nav class="navbar">
-		<div class="container">
-			<a href="#" class="logo">Secangkir Kopi</a>
-			
-			<ul class="menu">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Tentang</a></li>
-				<li><a href="#">Produk</a></li>
-				<li><a href="#">Layanan</a></li>
-				<li><a href="#">Kontak Kami</a></li>
-			</ul>
-		</div>
-	</nav>
-
-    <header class="main-header">
-        <div class="container-header">
-            <h1>Nikmati Secangkir Kopi!</h1>
-            <p>Rasakan kenikmatan kopi terbaik dari biji pilhan</p>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Secangkir Kopi</a>
+            <nav>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#services">Layanan</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <section id="about" class="about-us">
-        <div class="about-wrapper">
-            <h2>Tentang Kami</h2>
-            <p><strong>Secangkir Kopi</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quis sapiente ratione exercitationem iure. Deserunt voluptatum in ratione corrupti aspernatur culpa nostrum eius numquam doloremque, ad cupiditate ducimus totam velit facilis quas, odit excepturi voluptates quidem nisi ea id fugiat? Minus laboriosam, dolorum vel perferendis itaque omnis amet officia ducimus.</p>
-        </div>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Nikmati Secangkir Kopi!</h1>
+                <p>Rasakan kenikmatan kopi terbaik dari biji pilihan</p>
+                <a href="#products" class="btn">Lihat Produk</a>
+            </div>
+        </section>
 
-        <div class="about-image-wrapper">
-            <img src="https://thewoods.net.in/wp-content/uploads/2021/02/hotcofee.jpg" alt="about" class="about-image">
-        </div>
-    </section>
-
-    <product id="products" class="products-section">
-        <div class="products-wrapper">
-            <h2>Produk Kami</h2>
-            <div class="product-list">
-                <div class="product-item">
-                    <img src="" alt="Product 1">
-                    <h3>Espresso</h3>
-                    <p>Kopi hitam pekat dengan cita rasa kuat.</p>
-                </div>
-                <div class="product-item">
-                    <img src="" alt="Product 2">
-                    <h3>Cappuccino</h3>
-                    <p>Kopi dengan campuran susu berbusa yang lembut.</p>
-                </div>
-                <div class="product-item">
-                    <img src="" alt="Product 3">
-                    <h3>Latte</h3>
-                    <p>Kopi dengan susu panas yang creamy.</p>
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Tentang Kami</h2>
+                        <p><strong>Secangkir Kopi</strong> adalah tempat di mana Anda dapat menikmati kopi berkualitas tinggi. Kami menggunakan biji kopi pilihan dari petani lokal, dipanggang dengan hati-hati untuk memberikan cita rasa yang luar biasa.</p>
+                        <p>Kami percaya bahwa secangkir kopi bukan hanya minuman, tapi pengalaman yang menghubungkan Anda dengan momen-momen indah dalam hidup.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://thewoods.net.in/wp-content/uploads/2021/02/hotcofee.jpg" alt="Kopi panas di meja">
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
+        <section id="products" class="products">
+            <div class="container">
+                <h2>Produk Kami</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="https://blogstudio.s3.theshoppad.net/coffeeheroau/ec178d83e5f597b162cda1e60cb64194.jpg" alt="Espresso">
+                        <h3>Espresso</h3>
+                        <p>Kopi hitam pekat dengan cita rasa kuat yang sempurna untuk memulai hari Anda.</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://www.livingnorth.com/images/media/articles/food-and-drink/eat-and-drink/coffee.png?fm=webp&w=1000" alt="Cappuccino">
+                        <h3>Cappuccino</h3>
+                        <p>Kopi dengan campuran susu berbusa yang lembut dan creamy.</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://www.cuisinart.com/dw/image/v2/ABAF_PRD/on/demandware.static/-/Sites-us-cuisinart-sfra-Library/default/dw42dcae51/images/recipe-Images/cafe-latte1-recipe_resized.jpg?sw=1200&sh=1200&sm=fit" alt="Latte">
+                        <h3>Latte</h3>
+                        <p>Kopi dengan susu panas yang creamy, cocok untuk santai.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <h2>Layanan Kami</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <h3>Kopi Fresh</h3>
+                        <p>Kami sajikan kopi fresh setiap hari dengan biji pilihan.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Delivery</h3>
+                        <p>Layanan pengiriman cepat ke seluruh kota.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Custom Blend</h3>
+                        <p>Buat campuran kopi sesuai selera Anda.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Kontak Kami</h2>
+                <p>Hubungi kami untuk informasi lebih lanjut atau pesan kopi favorit Anda.</p>
+                <p>Email: info@secangkirkopi.com | Telepon: (021) 123-4567</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Secangkir Kopi. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
