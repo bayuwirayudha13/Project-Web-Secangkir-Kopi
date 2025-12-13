@@ -3,12 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: #FFC50F #2a2b2b;
 }
 
 a, button {
     touch-action: manipulation;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Arial', sans-serif;
