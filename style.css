@@ -113,11 +113,13 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: left;
     padding: 0 60px;
-    padding-left: 60px;
     text-align: left;
     position: relative;
+}
+
+.hero .container {
+    width: 100%;
 }
 
 .hero::before {
